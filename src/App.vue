@@ -37,6 +37,9 @@ export default {
     eventBus.$on('fav-selected', (beer) => {
       if (!this.favourites.includes(beer)) {this.favourites.push(beer)};
     });
+    eventBus.$on('fav-to-remove', (beerToRemove) => {
+      this.favourites = this.favourites.filter(beer => beer.name !== beerToRemove.name);
+    });
   },
   components: {
     "beer-list": BeerList,

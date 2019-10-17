@@ -35,7 +35,7 @@ export default {
       this.selectedBeer = beer;
     });
     eventBus.$on('fav-selected', (beer) => {
-      this.favourites.push(beer);
+      if (!this.favourites.includes(beer)) {this.favourites.push(beer)};
     });
   },
   components: {

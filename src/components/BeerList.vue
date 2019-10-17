@@ -21,4 +21,5 @@ export default {
 </script>
 
 <style lang="css" scoped>
+flex-basis: 30%;
 </style>

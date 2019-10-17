@@ -3,7 +3,7 @@
     <h2>Favourites list</h2>
 
     <ul>
-      <li v-for="(beer, index) in favourites" :key="index">
+      <li v-for="(beer, index) in favourites" :key="index" >
         {{ beer.name }}</li>
     </ul>
 
